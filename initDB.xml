@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Properties listing</comment>
+    <entry key="host">localhost</entry>
+    <entry key="port">1984</entry>
+    <entry key="usr">admin</entry>
+    <entry key="passwd">admin</entry>
+    <entry key="db">FreeplaneDB_tom</entry>
+    <entry key="topDirectory">/Users/thomasstuckey/</entry>
+</properties>
+
