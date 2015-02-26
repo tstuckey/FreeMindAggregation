@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="BaseX">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../externalJars/BaseX.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
