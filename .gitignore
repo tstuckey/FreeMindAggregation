@@ -1,0 +1,42 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+# Java specific files to ignore
+*.class
+
+
+# Generic files to ignore these include Mac specific,
+# editor backup, swap files, etc.
+*~
+**.lock
+**.DS_Store
+**.swp
+**.out
+
+# FreeMindAggregation specfic files to ignore
+dist/**
+distribution/**
+out/**
+
+
+#IntelliJ user workspaces
+**/\.idea/workspace.xml
+**/\.idea/copyright/profiles_settings.xml
+**/\.idea/jsLibraryMappings.xml
+**/libraries/*.xml
+**/*.iml
+#User specific .gitignore file
+
