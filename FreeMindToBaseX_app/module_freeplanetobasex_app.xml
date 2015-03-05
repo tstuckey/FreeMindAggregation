@@ -8,8 +8,8 @@
   
   <property name="compiler.args.freeplanetobasex_app" value="${compiler.args}"/>
   
-  <property name="freeplanetobasex_app.output.dir" value="${module.freeplanetobasex_app.basedir}/../out/production/FreeplaneToBaseX_app"/>
-  <property name="freeplanetobasex_app.testoutput.dir" value="${module.freeplanetobasex_app.basedir}/../out/test/FreeplaneToBaseX_app"/>
+  <property name="freeplanetobasex_app.output.dir" value="FreeMindToBaseX_app/../out/production/FreeplaneToBaseX_app"/>
+  <property name="freeplanetobasex_app.testoutput.dir" value="FreeMindToBaseX_app/../out/test/FreeplaneToBaseX_app"/>
   
   <path id="freeplanetobasex_app.module.bootclasspath">
     <!-- Paths to be included in compilation bootclasspath -->
@@ -59,7 +59,7 @@
   </patternset>
   
   <path id="freeplanetobasex_app.module.sourcepath">
-    <dirset dir="${module.freeplanetobasex_app.basedir}">
+    <dirset dir="FreeMindToBaseX_app">
       <include name="src"/>
     </dirset>
   </path>
@@ -78,7 +78,7 @@
     </javac2>
     
     <copy todir="${freeplanetobasex_app.output.dir}">
-      <fileset dir="${module.freeplanetobasex_app.basedir}/src">
+      <fileset dir="FreeMindToBaseX_app/src">
         <patternset refid="compiler.resources"/>
         <type type="file"/>
       </fileset>
