@@ -42,8 +42,10 @@ public final class BaseXClient {
    * @param password password
    * @throws IOException Exception
    */
-  public BaseXClient(final String host, final int port, final String username,
-      final String password) throws IOException {
+  public BaseXClient(final String host
+          ,final int port
+          ,final String username
+          ,final String password) throws IOException {
 
     socket = new Socket();
     socket.connect(new InetSocketAddress(host, port), 5000);

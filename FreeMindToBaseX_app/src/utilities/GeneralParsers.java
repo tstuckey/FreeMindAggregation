@@ -1,6 +1,7 @@
 package utilities;
 
 
+import java.io.IOException;
 import java.util.HashMap;
 
 public class GeneralParsers {
@@ -8,7 +9,12 @@ public class GeneralParsers {
 	public GeneralParsers(){
 
 	}
-
+    class AuthenticationStructure{
+        String host;
+        int port;
+        String user;
+        String clear_password;
+    }
 
     /**
      *
@@ -26,7 +32,6 @@ public class GeneralParsers {
         t_map.put("topDirectory",t_props.queryFor("topDirectory"));
 		return t_map;
 	}
-
 
 	
 }

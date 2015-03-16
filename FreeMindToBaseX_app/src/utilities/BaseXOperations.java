@@ -108,7 +108,7 @@ public class BaseXOperations {
 
         try {
             //System.out.println("Directory is "+System.getProperty("user.dir"));
-            //myXSL=new XSLTransformer("FreeplaneToBaseX_app/transforms/expandNode.xsl"); //for invoking within IDE
+            //myXSL=new XSLTransformer("FreeMindToBaseX_app/transforms/expandNode.xsl"); //for invoking within IDE
             myXSL=new XSLTransformer("transforms/expandNode.xsl");  //for invoking from JAR
             transformed_Doc=myXSL.transform(p_doc);
         } catch (XSLTransformException e) {

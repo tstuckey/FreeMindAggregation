@@ -38,5 +38,5 @@ out/**
 **/\.idea/jsLibraryMappings.xml
 **/libraries/*.xml
 **/*.iml
-#User specific .gitignore file
+
 
