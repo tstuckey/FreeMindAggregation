@@ -34,8 +34,8 @@ out/**
 
 #IntelliJ user workspaces
 **/\.idea/workspace.xml
+**/\.idea/misc.xml
 **/\.idea/copyright/profiles_settings.xml
-**/\.idea/jsLibraryMappings.xml
 **/libraries/*.xml
 **/*.iml
 
