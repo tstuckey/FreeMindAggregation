@@ -33,10 +33,11 @@ out/**
 
 
 #IntelliJ user workspaces
-**/\.idea/workspace.xml
-**/\.idea/misc.xml
-**/\.idea/copyright/profiles_settings.xml
-**/libraries/*.xml
+\.idea
+#**/\.idea/workspace.xml
+#**/\.idea/misc.xml
+#**/\.idea/copyright/profiles_settings.xml
+#**/libraries/*.xml
 **/*.iml
 
-
+.gitignore

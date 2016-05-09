@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="BaseX">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/Applications/myApps/basex/BaseX.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
