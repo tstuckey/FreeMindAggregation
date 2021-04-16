@@ -1,5 +1,3 @@
-package gui;
-
 /**
  * Created with IntelliJ IDEA.
  * User: thomasstuckey

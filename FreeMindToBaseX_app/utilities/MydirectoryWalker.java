@@ -1,5 +1,3 @@
-package utilities;
-
 import org.apache.commons.io.DirectoryWalker;
 import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.apache.commons.io.filefilter.HiddenFileFilter;
@@ -25,13 +23,14 @@ public class MydirectoryWalker extends DirectoryWalker {
         super(dirFilter, fileFilter, -1);
     }
 
-    /**Parse the directory by invoking the walk method that searches for file
+    /**
+     * Parse the directory by invoking the walk method that searches for file
      * names that match the
      *
      * @param startDirectory
      * @return
      */
-    public List parseDirectory(File startDirectory){
+    public List parseDirectory(File startDirectory) {
         List results = new ArrayList();
         try {
             this.walk(startDirectory, results);
@@ -42,13 +41,14 @@ public class MydirectoryWalker extends DirectoryWalker {
     }
 
 
-    /**Adds the file to the results.
+    /**
+     * Adds the file to the results.
      *
-     * @param file to be added to the results
+     * @param file    to be added to the results
      * @param depth
      * @param results the list of files that meet the criteria.
      */
-    protected void handleFile(File file, int depth, Collection results){
+    protected void handleFile(File file, int depth, Collection results) {
         results.add(file);
     }
 

@@ -9,6 +9,7 @@ import java.util.List;
 
 public class ParseDirectory {
     public List results; /*list of Files that match the criteria*/
+
     public ParseDirectory(String top_directory) {
         File startDirectory = null;
         try {
