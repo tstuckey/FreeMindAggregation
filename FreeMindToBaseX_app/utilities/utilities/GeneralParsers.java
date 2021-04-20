@@ -1,4 +1,5 @@
-import java.io.IOException;
+package utilities;
+
 import java.util.HashMap;
 
 public class GeneralParsers {
