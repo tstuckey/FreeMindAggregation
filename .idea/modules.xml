@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FreeMindToBaseX_app/core/core.iml" filepath="$PROJECT_DIR$/FreeMindToBaseX_app/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/FreeMindToBaseX_app/gui/gui.iml" filepath="$PROJECT_DIR$/FreeMindToBaseX_app/gui/gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FreeMindToBaseX_app/key_utilities/key_utilities.iml" filepath="$PROJECT_DIR$/FreeMindToBaseX_app/key_utilities/key_utilities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FreeMindToBaseX_app/primary_actions/primary_actions.iml" filepath="$PROJECT_DIR$/FreeMindToBaseX_app/primary_actions/primary_actions.iml" />
       <module fileurl="file://$PROJECT_DIR$/FreeMindToBaseX_app/transforms/transforms.iml" filepath="$PROJECT_DIR$/FreeMindToBaseX_app/transforms/transforms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FreeMindToBaseX_app/utilities/utilities.iml" filepath="$PROJECT_DIR$/FreeMindToBaseX_app/utilities/utilities.iml" />
     </modules>
   </component>
 </project>
