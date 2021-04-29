@@ -2,7 +2,6 @@ package utilities;
 
 import org.apache.commons.io.DirectoryWalker;
 import org.apache.commons.io.filefilter.IOFileFilter;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,7 +20,6 @@ public class MydirectoryWalker extends DirectoryWalker {
     public MydirectoryWalker(IOFileFilter dirFilter, IOFileFilter fileFilter) {
         super(dirFilter, fileFilter, -1);
     }
-
     /**
      * Parse the directory by invoking the walk method that searches for file
      * names that match the
@@ -39,7 +37,6 @@ public class MydirectoryWalker extends DirectoryWalker {
         return results;
     }
 
-
     /**
      * Adds the file to the results.
      *
@@ -50,5 +47,4 @@ public class MydirectoryWalker extends DirectoryWalker {
     protected void handleFile(File file, int depth, Collection results) {
         results.add(file);
     }
-
 }

@@ -23,7 +23,6 @@ public class ParseAndLoad {
         String clear_password;
     }
 
-
     public static void main(String[] args) {
         GeneralParsers gp = new GeneralParsers();
         //if there more than zero command line arguments, use the the first one, else use the string specified
@@ -44,6 +43,4 @@ public class ParseAndLoad {
             System.err.println(e);
         }
     }
-
-
 }

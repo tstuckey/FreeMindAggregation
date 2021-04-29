@@ -16,8 +16,6 @@ public class MainInternalFrame extends JInternalFrame {
 
 
         JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        //new Import_to_SystemArchitect(desktop,this,tabbedPane);
-        //new Export_from_SystemArchitect(desktop,this,tabbedPane);
 
         JScrollPane areaScrollPane = new JScrollPane(tabbedPane);
         areaScrollPane.setVerticalScrollBarPolicy(

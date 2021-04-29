@@ -8,6 +8,5 @@
 public class ScanAndLoadFreemind_GUI {
     public static void main(String[] args) {
         TheDesktop.drawPage("Freemind Helper");
-
     }
 }

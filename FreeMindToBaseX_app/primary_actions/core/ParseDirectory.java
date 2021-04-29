@@ -3,7 +3,6 @@ package core;
 import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.apache.commons.io.filefilter.HiddenFileFilter;
 import utilities.MydirectoryWalker;
-
 import java.io.File;
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class ParseDirectory {
         } catch (Exception e) {
             System.err.println("Failed to find the directory " + top_directory);
             System.exit(1);
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
         //System.out.println("have a file handle to " + startDirectory.toString());
 
