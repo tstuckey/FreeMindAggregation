@@ -25,12 +25,13 @@ public class ParseAndLoad {
 
     public static void main(String[] args) {
         GeneralParsers gp = new GeneralParsers();
-        //if there more than zero command line arguments, use the the first one, else use the string specified
         String xmlFileName = args.length > 0 ? args[0] : "initDB.xml";
+        System.out.println("path is "+xmlFileName);
         HashMap myHash = gp.getDbParams(xmlFileName);
         ParseDirectory fileHits = new ParseDirectory(myHash.get("topDirectory").toString());
 
         try {
+            System.out.println("password is"+myHash.get("passwd").toString());
             BaseXClient session = new BaseXClient(myHash.get("host").toString()
                     , Integer.parseInt(myHash.get("port").toString())
                     , myHash.get("usr").toString()

@@ -103,7 +103,7 @@ public class BaseXOperations {
     }
 
     /**
-     * Apply an XSL to to the input document and return the transformed document.
+     * Apply an XSL to the input document and return the transformed document.
      *
      * @param p_doc
      * @return transformed document
@@ -113,7 +113,6 @@ public class BaseXOperations {
         Document transformed_Doc = null;
 
         try {
-            //System.out.println("Directory is "+System.getProperty("user.dir"));
             //myXSL=new XSLTransformer("FreeMindToBaseX_app/transforms/expandNode.xsl"); //for invoking within IDE
             myXSL = new XSLTransformer("transforms/expandNode.xsl");  //for invoking from JAR
             transformed_Doc = myXSL.transform(p_doc);

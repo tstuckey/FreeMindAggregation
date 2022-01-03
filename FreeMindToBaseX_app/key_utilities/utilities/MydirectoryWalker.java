@@ -11,9 +11,6 @@ import java.util.List;
 /**
  * Created with IntelliJ IDEA.
  * User: thomasstuckey
- * Date: 7/23/12
- * Time: 9:01 PM
- * To change this template use File | Settings | File Templates.
  */
 public class MydirectoryWalker extends DirectoryWalker {
 
