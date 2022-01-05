@@ -18,9 +18,7 @@ public class ParseDirectory {
             System.exit(1);
             e.printStackTrace();
         }
-        //System.out.println("have a file handle to " + startDirectory.toString());
 
-        //filter for files with the visibile files with the .mm suffix
         MydirectoryWalker mywalker = new MydirectoryWalker(
                 HiddenFileFilter.VISIBLE,
                 FileFilterUtils.suffixFileFilter(".mm")

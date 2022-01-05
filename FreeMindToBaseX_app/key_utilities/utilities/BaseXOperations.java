@@ -1,5 +1,6 @@
 package utilities;
 
+import org.apache.commons.io.FileUtils;
 import org.basex.core.Context;
 import org.jdom2.Document;
 import org.jdom2.JDOMException;
@@ -7,18 +8,11 @@ import org.jdom2.transform.XSLTransformException;
 import org.jdom2.transform.XSLTransformer;
 import org.jdom2.input.*;
 import org.jdom2.output.*;
-
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: thomasstuckey
- * Date: 8/8/12
- * Time: 11:13 PM
- * To change this template use File | Settings | File Templates.
- */
 public class BaseXOperations {
     // Create database context
     final Context ctx = new Context();
@@ -35,11 +29,27 @@ public class BaseXOperations {
      * @throws IOException
      */
     public void setupDB(String schema) throws IOException {
-        // create empty database
         session.execute("create db " + schema);
         session.execute("set parser xml");
-        //System.out.println(session.info());
 
+    }
+
+    /**
+     * Remove any offending special characters that would throw off XML encodings
+     * @param t_file
+     * @return File cast of string
+     */
+    private File fix_file(File t_file, File tmpFile){
+        File textFile = t_file;
+        String data = null;
+        try {
+            data = FileUtils.readFileToString(textFile, StandardCharsets.UTF_8);
+            data = data.replace("&nbsp;", " ");
+            FileUtils.writeStringToFile(tmpFile, data, StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return tmpFile;
     }
 
     /**
@@ -54,7 +64,14 @@ public class BaseXOperations {
         File t_file;
         while (myiterator.hasNext()) {
             t_file = myiterator.next();
-            Document orgDoc = convertFileTojDom(t_file);
+            File tmpFile = new File("./tmp.mm");
+            tmpFile = fix_file(t_file, tmpFile);
+            Document orgDoc = convertFileTojDom(tmpFile);
+            try{
+                tmpFile.delete(); // delete the temporary file
+            }catch(Exception e){
+                //unable to delete tmp file
+            }
             Document expandedDoc = expandNodes(orgDoc);
             ByteArrayOutputStream os = convertDocumentToOutputStream(expandedDoc);
             ByteArrayInputStream is = convertOutputTOInput(os);
